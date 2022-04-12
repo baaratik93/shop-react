@@ -1,0 +1,108 @@
+.header {
+    color: blanchedalmond;
+    display: flex;
+    .vertical {
+        display: none;
+    }
+    .btnMenu {
+        display: none;
+        position: absolute;
+        top: 18px;
+        right: 10px;
+    }
+    .logo {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: start;
+        span {
+            display: block;
+            text-align: center;
+            font-size: 25px;
+            color:wheat;
+            letter-spacing: 15px;
+
+            span {
+                color: goldenrod;
+                font-size: 40px;
+                font-weight: bold;
+                letter-spacing: normal;
+                font-family: algerian;
+                span {
+                    letter-spacing: normal;
+                    color: gold;
+                    display: inline-block;
+                    transform: rotateY(180deg) skew(9deg);
+                }
+            }
+        }
+    }
+   nav {
+    ul {
+        flex-grow: 1;
+        min-width: 270px;
+        display: grid;
+        gap: 5px;
+        grid-auto-flow: column;
+        margin: 40px;
+        li {
+            font-size: 20px;
+            list-style-type: none;
+            margin: auto;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        hr{
+            height: 15px;
+        }
+    }
+   }
+}
+
+@media screen and (max-width:"672px") {
+    .header {
+        
+        nav {
+            // position: relative;
+            // top: 0;
+            // right: 0;
+            // width: 150px;
+            display: none;
+            ul {
+                position: absolute;
+                display: grid;
+                grid-auto-flow: row;
+                margin: 0;
+            }
+        }
+
+        .vertical {
+            ul {
+                display: flex;
+                flex-flow: column;
+                list-style-type: none;
+
+                li {
+                    
+                    width: 100px;
+                    border-bottom: .1px solid rgb(156, 155, 155);
+                    border-top: .1px solid rgb(156, 155, 155);
+                    letter-spacing: 3px;
+                    font-size: 18px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(214, 48, 48);
+                    }
+                }
+            }
+        }
+        .btnMenu {
+            display: block;
+            color: chartreuse;
+            font-size: 30px;
+            margin: 25px 5px 0 0;
+        }
+    }
+}

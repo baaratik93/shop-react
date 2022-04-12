@@ -1,0 +1,59 @@
+
+.form {
+    width: 400px;
+    background-color: rgb(41, 36, 36);
+    display: block;
+    margin: 10% auto;
+    padding: 1%;
+    border-radius: 40px;
+
+    .input {
+        display: block;
+        max-width: 300px;
+        height: 70px;
+        margin: 5px auto;
+
+        label {
+            display: block;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: wheat;
+        }
+
+        input,select {
+            color: grey;
+            font-size: 20px;
+            height: 30px;
+            border-radius: 12px;
+            margin: 2px auto;
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    .action {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        a {
+            color: rgb(85, 85, 240);
+            text-align: center;
+            text-decoration: none;
+        }
+        input[type='submit']{
+            margin: 1% 6% 0 1%;
+            display: block;
+            width: 200px;
+            background-color: rgb(85, 85, 240);
+            border: none;
+            border-radius: 18px;
+            color: white;
+            font-size: 20px;
+        }
+        input[type='checkbox']{
+           margin-left: -15%;
+        }
+    }
+}

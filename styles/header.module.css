@@ -1,0 +1,122 @@
+.header {
+  color: blanchedalmond;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .vertical {
+  display: none;
+}
+
+.header .btnMenu {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.header .logo span {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: wheat;
+  letter-spacing: 15px;
+}
+
+.header .logo span span {
+  color: goldenrod;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: normal;
+  font-family: algerian;
+}
+
+.header .logo span span span {
+  letter-spacing: normal;
+  color: gold;
+  display: inline-block;
+  -webkit-transform: rotateY(180deg) skew(9deg);
+          transform: rotateY(180deg) skew(9deg);
+}
+
+.header nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 270px;
+  display: -ms-grid;
+  display: grid;
+  gap: 5px;
+  grid-auto-flow: column;
+  margin: 40px;
+}
+
+.header nav ul li {
+  font-size: 20px;
+  list-style-type: none;
+  margin: auto;
+}
+
+.header nav ul li:hover {
+  cursor: pointer;
+}
+
+.header nav ul hr {
+  height: 15px;
+}
+
+@media screen and (max-width: 672px) {
+  .header nav {
+    display: none;
+  }
+  .header nav ul {
+    position: absolute;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+    margin: 0;
+  }
+  .header .vertical ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    list-style-type: none;
+  }
+  .header .vertical ul li {
+    width: 100px;
+    border-bottom: 0.1px solid #9c9b9b;
+    border-top: 0.1px solid #9c9b9b;
+    letter-spacing: 3px;
+    font-size: 18px;
+  }
+  .header .vertical ul li:hover {
+    cursor: pointer;
+    background-color: #d63030;
+  }
+  .header .btnMenu {
+    display: block;
+    color: chartreuse;
+    font-size: 30px;
+    margin: 25px 5px 0 0;
+  }
+}
+/*# sourceMappingURL=header.module.css.map */

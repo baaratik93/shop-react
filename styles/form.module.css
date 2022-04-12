@@ -1,0 +1,67 @@
+.form {
+  width: 400px;
+  background-color: #292424;
+  display: block;
+  margin: 10% auto;
+  padding: 1%;
+  border-radius: 40px;
+}
+
+.form .input {
+  display: block;
+  max-width: 300px;
+  height: 70px;
+  margin: 5px auto;
+}
+
+.form .input label {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: wheat;
+}
+
+.form .input input, .form .input select {
+  color: grey;
+  font-size: 20px;
+  height: 30px;
+  border-radius: 12px;
+  margin: 2px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.form .action {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.form .action a {
+  color: #5555f0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form .action input[type='submit'] {
+  margin: 1% 6% 0 1%;
+  display: block;
+  width: 200px;
+  background-color: #5555f0;
+  border: none;
+  border-radius: 18px;
+  color: white;
+  font-size: 20px;
+}
+
+.form .action input[type='checkbox'] {
+  margin-left: -15%;
+}
+/*# sourceMappingURL=form.module.css.map */
